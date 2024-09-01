@@ -1,0 +1,36 @@
+---
+import ArrowIcon from "./icons/ArrowIcon.astro";
+import StarIcon from "./icons/StarIcon.astro";
+---
+
+<section class="mt-32 sm:mt-20 relative">
+  <div class="hero relative">
+    <img
+      class="w-64 sm:w-96 absolute left-1/2 mt-12"
+      src="/assets/ba4caa96-942a-4c56-b120-cb3c0e6bb1a8.png"
+      alt="Alfombra Roja"
+    />
+    <img
+      class="w-28 sm:w-40 absolute left-1/2 rounded-xl"
+      src="/assets/more.webp"
+      alt="Morelia"
+    />
+  </div>
+  <img
+    class="flex absolute w-20 sm:w-44 top-14 left-[5%] transform rotate-[22.6746deg]"
+    src="/assets/t.png"
+    alt="Fun"
+  />
+  <ArrowIcon class="flex absolute w-12 sm:w-20 top-28 sm:top-44 left-[14%]" />
+  <StarIcon class="flex absolute w-20 sm:w-40 top-20 right-[6%]" />
+</section>
+
+<style>
+  section {
+    & div {
+      & img {
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+</style>

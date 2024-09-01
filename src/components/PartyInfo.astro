@@ -1,0 +1,53 @@
+---
+import StarMarker from "./StarMarker.astro";
+import TicketsImage from "./TicketsImage.astro";
+---
+
+<section class="flex flex-col mt-[22rem]">
+  <span
+    class="text-center text-[25.5px] sm:text-[35.5px] leading-[30px] sm:leading-[50px] text-[#CD5033]"
+  >
+    Te invitamos al evento cinematográfico del año:
+  </span>
+  <span
+    class="text-center text-[36.7px] sm:text-[46.7px] leading-[45px] sm:leading-[55px] text-[#CD5033]"
+  >
+    El Cumpleaños 27 de
+  </span>
+  <span
+    class="text-center text-[52.7px] sm:text-[62.7px] leading-[56px] sm:leading-[65px] text-[#F73A23]"
+    >MORELIA</span
+  >
+  <StarMarker />
+  <div class="flex justify-center relative">
+    <img
+      class="w-40 sm:w-60 absolute -top-4 -left-11 z-10"
+      src="/assets/popcorn.png"
+      alt="popcorn"
+    />
+    <TicketsImage />
+    <div class="w-1/2 pr-4 sm:pr-9 flex justify-end items-center relative z-20">
+      <span class="text-[#CD5033] text-2xl sm:text-6xl w-24 sm:w-60 text-right"
+        >14 de setiembre del 2024</span
+      >
+    </div>
+    <div
+      class="w-1/2 pl-4 sm:pl-9 flex justify-start items-center relative z-20"
+    >
+      <span class="text-[#F73A23] text-3xl sm:text-7xl w-24 sm:w-44"
+        >19:00 horas</span
+      >
+    </div>
+  </div>
+  <StarMarker />
+  <h3
+    class="text-center mt-8 sm:mt-4 text-[#CD5033] text-2xl sm:text-5xl leading-[30px] sm:leading-[60px]"
+  >
+    Dress code: ¡Ven vestido como tu personaje de película favorito!
+  </h3>
+  <div class="flex gap-4 justify-center mt-2">
+    <img class="w-5 sm:w-8 h-5 sm:h-8" src="/assets/t.webp" alt="yellow-star" />
+    <img class="w-5 sm:w-8 h-5 sm:h-8" src="/assets/t.webp" alt="yellow-star" />
+    <img class="w-5 sm:w-8 h-5 sm:h-8" src="/assets/t.webp" alt="yellow-star" />
+  </div>
+</section>
